@@ -1,71 +1,78 @@
 <!doctype html>
-<html lang="en-GB"><head>
+<html lang="en-GB">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Parker Golf | Guided discovery golf coaching</title>
 <meta name="description" content="Parker Golf — guided discovery golf coaching with Richard Parker in Staffordshire.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"></head>
+<style>
+:root{--ink:#080808;--muted:#666;--line:#d8d8d8;--soft:#f0f0ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.55}a{color:inherit}
+.header{height:104px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-size:17px;font-weight:600;letter-spacing:.23em;text-decoration:none;white-space:nowrap}.menu-btn{border:0;background:transparent;font:400 17px Inter,sans-serif;color:#555;padding:12px 0}
+.menu{display:none;border-bottom:1px solid var(--line);padding:18px 5vw;text-align:right}.menu.open{display:block}.menu a{font-size:14px;text-decoration:none;margin-left:28px}
+.wrap{max-width:1180px;margin:auto;padding-left:28px;padding-right:28px}
+.hero{padding-top:110px;padding-bottom:120px}.label{margin:0 0 30px;font-size:12px;line-height:1.2;font-weight:600;letter-spacing:.16em;color:var(--muted)}
+h1,h2,h3,p{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+h1{font-size:clamp(56px,7vw,92px);line-height:1.02;letter-spacing:-.04em;font-weight:400;margin:0;max-width:920px}
+.hero-copy{font-size:20px;line-height:1.5;max-width:670px;margin:34px 0 0}
+.action{display:inline-block;margin-top:32px;background:#080808;color:#fff;padding:15px 24px;text-decoration:none;font-size:14px}
+.section{padding-top:105px;padding-bottom:105px}.soft{background:var(--soft)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+h2{font-size:clamp(43px,5vw,68px);line-height:1.05;letter-spacing:-.035em;font-weight:400;margin:0}
+.copy{font-size:18px;max-width:600px}.copy p:first-child{font-size:24px;line-height:1.4;margin-top:0}.copy strong{font-weight:600}
+.principle{text-align:center}.principle h2 strong{font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:48px;border-top:1px solid #bbb}.step{padding-top:24px}.step span{font-size:11px;color:#777}.step h3{font-size:21px;font-weight:600;margin:30px 0 10px}.step p{font-size:15px;margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.portrait{height:560px;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover}.about-text h2{margin-bottom:32px}.about-text>p:not(.label){font-size:18px;max-width:570px}
+.contact{background:#080808;color:#fff}.contact .label{color:#bbb}.contact p{font-size:19px;max-width:650px}.light-action{display:inline-block;margin-top:18px;background:#fff;color:#080808;padding:15px 24px;text-decoration:none;font-size:14px}
+.footer{min-height:104px;padding:30px 5vw;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:30px;font-size:12px;color:#666}.footer .brand{font-size:14px;color:#080808}
+@media(max-width:760px){
+.header{height:92px;padding:0 26px}.brand{font-size:15px}.menu-btn{font-size:15px}.menu{padding:14px 26px}.menu a{margin-left:18px}
+.wrap{padding-left:26px;padding-right:26px}.hero{padding-top:90px;padding-bottom:95px}h1{font-size:56px;letter-spacing:-.035em}.hero-copy{font-size:18px}
+.section{padding-top:82px;padding-bottom:82px}.grid,.about{grid-template-columns:1fr;gap:46px}.copy p:first-child{font-size:22px}.principle{text-align:left}
+.steps{grid-template-columns:1fr 1fr;gap:30px 22px}.portrait{height:450px}.footer{padding:30px 26px;align-items:flex-start;flex-direction:column;gap:10px}
+}
+</style>
+</head>
 <body>
-<header>
-<a class="wordmark" href="#top">PARKER GOLF</a>
-<button id="menuButton" aria-expanded="false">Menu</button>
-</header>
-<nav id="menu">
-<a href="#approach">Approach</a><a href="#lesson">A lesson</a><a href="#richard">Richard</a><a href="#contact">Let's talk</a>
-</nav>
-
+<header class="header"><a class="brand" href="#top">PARKER GOLF</a><button class="menu-btn" id="mb" aria-expanded="false">Menu</button></header>
+<nav class="menu" id="menu"><a href="#approach">Approach</a><a href="#lesson">A lesson</a><a href="#richard">Richard</a><a href="#contact">Let's talk</a></nav>
 <main id="top">
-<section class="hero">
+<section class="hero wrap">
 <p class="label">GUIDED DISCOVERY GOLF COACHING</p>
-<h1>What are you<br>curious about?</h1>
+<h1>What are you curious about?</h1>
 <p class="hero-copy">Good coaching gives your exploration direction without taking the discovery away from you.</p>
-<a class="button dark" href="#approach">Explore the approach</a>
+<a class="action" href="#approach">Explore the approach</a>
 </section>
 
-<section id="approach" class="soft split">
-<div><p class="label">THE PARKER GOLF APPROACH</p><h2>A different way<br>to learn golf.</h2></div>
-<div class="copy">
-<p class="lead">You're not left to figure it out alone. And you're not simply given a swing to copy.</p>
+<section id="approach" class="soft"><div class="section wrap grid">
+<div><p class="label">THE PARKER GOLF APPROACH</p><h2>A different way to learn golf.</h2></div>
+<div class="copy"><p>You're not left to figure it out alone. And you're not simply given a swing to copy.</p>
 <p>I use my experience as a coach to help identify what matters, give you the knowledge you need and create purposeful tasks that make the feedback clear.</p>
-<p><strong>The guidance gives the exploration direction. The discovery belongs to you.</strong></p>
-</div>
-</section>
+<p><strong>The guidance gives the exploration direction. The discovery belongs to you.</strong></p></div>
+</div></section>
 
-<section class="principle">
-<p class="label">A SIMPLE PRINCIPLE</p>
-<h2>Clear about the <strong>what.</strong><br>Curious about the <strong>how.</strong></h2>
-</section>
+<section class="section wrap principle"><p class="label">A SIMPLE PRINCIPLE</p><h2>Clear about the <strong>what.</strong><br>Curious about the <strong>how.</strong></h2></section>
 
-<section id="lesson" class="lesson">
-<p class="label">WHAT A LESSON FEELS LIKE</p>
+<section id="lesson" class="section wrap"><p class="label">WHAT A LESSON FEELS LIKE</p>
 <div class="steps">
-<article><span>01</span><h3>Curiosity</h3><p>We start with what you want to understand, change or explore.</p></article>
-<article><span>02</span><h3>Direction</h3><p>I'll help make the task clear and provide the information that matters.</p></article>
-<article><span>03</span><h3>Exploration</h3><p>You experiment, notice the feedback and discover how you can influence it.</p></article>
-<article><span>04</span><h3>Ownership</h3><p>You leave with something that makes sense to you — not another position to remember.</p></article>
-</div>
-</section>
+<div class="step"><span>01</span><h3>Curiosity</h3><p>We start with what you want to understand, change or explore.</p></div>
+<div class="step"><span>02</span><h3>Direction</h3><p>I help make the task clear and provide the information that matters.</p></div>
+<div class="step"><span>03</span><h3>Exploration</h3><p>You experiment, notice the feedback and discover how you can influence it.</p></div>
+<div class="step"><span>04</span><h3>Ownership</h3><p>You leave with something that makes sense to you.</p></div>
+</div></section>
 
-<section id="richard" class="about">
-<div class="portrait"><img src="richard-parker.jpg" alt="Richard Parker, Parker Golf coach"></div>
-<div class="about-copy"><p class="label">RICHARD PARKER</p><h2>Coaching, not<br>a prescription.</h2>
+<section id="richard" class="soft"><div class="section wrap about">
+<div class="portrait"><img src="richard-parker.jpg" alt="Richard Parker"></div>
+<div class="about-text"><p class="label">RICHARD PARKER</p><h2>Coaching, not a prescription.</h2>
 <p>I've played golf for more than 30 years and know what it feels like to chase positions, techniques and the next answer.</p>
-<p>Parker Golf grew from a different idea: good coaching can give you direction without taking the learning away from you.</p>
-</div>
-</section>
+<p>Parker Golf grew from a different idea: good coaching can give you direction without taking the learning away from you.</p></div>
+</div></section>
 
-<section id="contact" class="contact">
-<p class="label inverse-label">START WITH A CONVERSATION</p>
-<h2>What are you curious about?</h2>
-<p>Tell me what's happening with your golf and what you'd like to explore.</p>
-<a class="button light" href="mailto:hello@parkergolf.uk?subject=Parker%20Golf%20coaching">Let's talk</a>
-</section>
+<section id="contact" class="contact"><div class="section wrap"><p class="label">START WITH A CONVERSATION</p><h2>What are you curious about?</h2>
+<p>Tell me what's happening with your golf and what you'd like to explore.</p><a class="light-action" href="mailto:hello@parkergolf.uk?subject=Parker%20Golf%20coaching">Let's talk</a></div></section>
 </main>
-
-<footer><span class="wordmark">PARKER GOLF</span><span>Richard Parker · Staffordshire</span><span>© 2026 Parker Golf</span></footer>
-<script>
-const b=document.getElementById('menuButton'),m=document.getElementById('menu');
-b.onclick=()=>{let o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)};
-m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));
-</script></body></html>
+<footer class="footer"><span class="brand">PARKER GOLF</span><span>Richard Parker · Staffordshire</span><span>© 2026 Parker Golf</span></footer>
+<script>const b=document.getElementById('mb'),m=document.getElementById('menu');b.onclick=()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)};m.querySelectorAll('a').forEach(a=>a.onclick=()=>m.classList.remove('open'));</script>
+</body></html>
