@@ -1,2 +1,2 @@
-# Parker Golf V1.4
-V1.2 design with restrained portal-style header and menu.
+# Parker Golf V2
+Clean rebuild using the portal as the visual reference. Inter typography; PARKER GOLF only in the header.
