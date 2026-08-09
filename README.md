@@ -1,8 +1,10 @@
-# Parker Golf static site — Version 1.2
+# Parker Golf website — Version 1.3
 
-iPad-friendly GitHub upload: all four files go in the repository root.
+Portal-inspired visual identity:
+- Inter typography
+- PARKER GOLF tracked wordmark and strapline
+- responsive Menu overlay
+- existing Parker Golf monochrome photography
+- V1.2 guided discovery messaging
 
-- index.html
-- styles.css
-- richard-parker.jpg
-- README.md
+For iPad/GitHub convenience all files remain in the repository root.
