@@ -1,1 +1,2 @@
-Parker Golf V2.3 — adds SumUp booking links and separate privacy.html page.
+Parker Golf GitHub Pages upload
+Open index.html for the homepage. Open portal.html for the portal guide.
